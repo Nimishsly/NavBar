@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: url(https://cdn.wallpapersafari.com/32/3/S1jatp.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: rgb(115, 255, 0);
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.Action_btn{
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding:.7em 1.4em;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.Action_btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+
+.Action_btn:active{
+    scale: 0.95;
+}
+
+@media(max-width : 620px){
+    .navbar .links,
+    .navbar .Action_btn{
+display: none;
+    }
+    .navbar .toggle_btn{
+        display: block;
+    }
+}
+
